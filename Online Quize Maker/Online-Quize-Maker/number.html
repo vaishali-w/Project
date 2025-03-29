@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/87550c64f0.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- title about page -->
+    <title>Game Zone || Guessing Number</title>
+    <!-- css file link -->
+    <link rel="stylesheet" href="./css file/questionAnswer.css" />
+  </head>
+  <body>
+    <!-- question answer part -->
+    <div class="container">
+      <!-- main box which aligment is center -->
+      <!-- main box have two column -->
+      <div class="box">
+        <!-- first column -->
+        <div class="col1">
+          <!-- Timer -->
+          <div class="time">
+            <p>
+              <span class="minut">00</span>
+              :
+              <span class="second">00</span>
+            </p>
+          </div>
+          <!-- life -->
+          <div class="life1">
+            <p>
+              Life :
+              <span class="life" style="color: green">10</span>
+            </p>
+          </div>
+          <!-- green and red light -->
+          <div class="correctAndWrong">
+            <p class="green">00</p>
+            <span>
+              <i class="color1 fa-solid fa-circle"></i>
+            </span>
+            <p class="red">00</p>
+            <span>
+              <i class="color2 fa-solid fa-circle"></i>
+            </span>
+          </div>
+        </div>
+        <!-- second column -->
+        <div class="col2">
+          <!-- question -->
+          <p class="question">Guessing between 1 to 20</p>
+          <!-- input area -->
+          <input type="number" class="value1" />
+          <!-- error message -->
+          <p class="error">Please try again</p>
+          <!-- button  for submit answer -->
+          <a href="javascript:void(0)" class="button">Check</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- falid page -->
+    <div class="fail">
+      <!-- faild box which aligment is center -->
+      <div class="fail-box">
+        <!-- faild page image -->
+        <div class="fail-image"></div>
+        <!-- faild page content -->
+        <div class="fail-content">
+          <!-- one heading -->
+          <h1>Sorry you lost the game</h1>
+          <!-- one peragraph -->
+          <p>
+            Do not be sad losing and winning are a part of life please try again
+            and win this game.
+          </p>
+          <!-- button -->
+          <div class="option">
+            <a href="./number.html" class="play">Play again</a>
+            <a href="./index.html" class="go">Go back</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- congratulations page -->
+    <div class="congratulation">
+      <!-- congratulation center box -->
+      <div class="congrat-box">
+        <!-- again image -->
+        <div class="congrat-image"></div>
+        <!-- again content -->
+        <div class="congrat-detail">
+          <!-- one heading -->
+          <h1>Congratulations</h1>
+          <!-- 6 peragraph -->
+          <p class="someLine">You played it like a good player</p>
+          <p>Timing: <span class="userTime">00</span></p>
+          <p>Save life: <span class="userLife">00</span></p>
+          <p>Correct: <span class="correct">00</span></p>
+          <p>Wrong: <span class="wrong">00</span></p>
+          <p>Percentage: <span class="percentage">00</span></p>
+        </div>
+        <!-- go back button -->
+        <div class="back">
+          <a href="./index.html" class="go">Go back</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="./javscript file/number.js"></script>
+  </body>
+</html>
